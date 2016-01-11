@@ -89,11 +89,14 @@
         var gitHubSearch="https://api.github.com/search/repositories?q=";
         
         if (searchPhrase) {
-             resultList.text("Performing Search...");
+             resultList.text("Searching GitHub for "+searchPhrase+"...");
              gitHubSearch += encodeURIComponent(searchPhrase);
             $.get(gitHubSearch)
             .success(function(r){
                 displayResults(r.items, resultList); 
+            })
+            .fail(function(r){
+                resultList.text("Failed to retrieve search results");
             });
              
         }
@@ -122,7 +125,7 @@
 
 function displayResults(results, resultList){
     //empty results
-    resultList.empthy();
+    resultList.empty();
     
     //loop through result items and get information, then append to resultList
     $.each(results, function(i, item){
