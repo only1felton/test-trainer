@@ -42,3 +42,21 @@ body {
     background: white ;
     color: black ;
 }
+
+.bordered-image {
+    border: solid 1px #444;
+    border=radius: 2px;
+}
+
+.result {
+    margin: 5px;
+    border: 1px solid #888;
+    color: white;
+
+}
+
+.result .title {
+    font-weight: bold;
+    font-size: 15;
+    color: springgreen;
+}

@@ -136,13 +136,13 @@
 
           <div class="sbs-container widget uib_w_33 d-margins sbs" data-uib="layout/side_by_side" data-ver="0">
             <div class="leftContent widget-container">
-              <div class="table-thing with-label widget uib_w_20 d-margins search-lbl-txt" data-uib="jquery_mobile/input" data-ver="0">
+              <div class="table-thing with-label widget uib_w_20 d-margins search-lbl-txt search-width" data-uib="jquery_mobile/input" data-ver="0">
                 <label class="narrow-control label-inline" for="search-input">Search</label>
-                <input class="wide-control" placeholder="keyword" type="search" data-mini="true" id="search-input">
+                <input class="wide-control" type="search" data-mini="true" id="search-input">
               </div>
             </div>
             <div class="rightContent widget-container">
-              <a class="widget uib_w_34 d-margins" data-uib="jquery_mobile/button" data-ver="0" data-role="button" data-icon="check" data-iconpos="right" data-mini="true" data-theme="b" id="search-button">go</a>
+              <a class="widget uib_w_34 d-margins btn-max-width" data-uib="jquery_mobile/button" data-ver="0" data-role="button" data-icon="check" data-iconpos="right" data-mini="true" data-theme="b" id="search-button">go</a>
             </div>
           </div>
           <div class="grid grid-pad urow uib_row_1 row-height-1" data-uib="layout/row" data-ver="0">
@@ -154,12 +154,18 @@
             </div>
             <span class="uib_shim"></span>
           </div>
-          <div id="results" class="bordered-image">
-              <div id="resultList">This is where results will live eventually...</div>
+          <div id="result" class="bordered-image">
+            <div id="resultList" style="color: white;">Right now this searches GitHub. Try 'ninja' as a search term</div>
           </div>
-          
 
         </div>
+      </div>
+    </div>
+
+    <!-- Dialogue Page for alerts -->
+    <div class="upage" data-role="page" data-dialog="true" id="dialog-page">
+      <div data-role="header">
+        <h1>I'm A Dialog Box!</h1>
       </div>
     </div>
 
