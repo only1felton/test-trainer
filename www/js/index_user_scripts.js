@@ -113,7 +113,7 @@
     $(document).on("click", ".uib_w_32", function(evt)
     {
          /*global activate_page */
-         activate_page("#dialog-page"); 
+        
     });
     
     }
