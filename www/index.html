@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="media_button_bar/css/media_button_bar.css">
+    <link rel="stylesheet" type="text/css" href="jqm/jquery.mobile-min.css">
+    <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+    <link rel="stylesheet" type="text/css" href="css/app.css" class="main-less">
+    <link rel="stylesheet" type="text/css" href="app_framework/3.0/icons.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+    <script src="intelxdk.js"></script>
+    <script src="cordova.js"></script>
+    <script src="xhr.js"></script>
+    <script src="xdk/init-dev.js"></script>
+    <script type="application/javascript" src="lib/jquery.min.js"></script>
+    <script type="application/javascript" src="jqm/jquery.mobile-min.js" data-ver="0"></script>
+    <script type="application/javascript" src="js/app.js"></script>
+    <script type="application/javascript" src="js/init-app.js"></script>
+    <script type="application/javascript" src="sidebar/js/hammer.js"></script>
+    <script type="application/javascript" src="sidebar/js/jquery.hammer.js"></script>
+    <script type="application/javascript" src="sidebar/js/swipe-hammer.js"></script>
+    <script type="application/javascript" src="sidebar/js/sidebar.js"></script>
+    <script type="application/javascript" src="js/index_user_scripts.js"></script>
+    <script type="application/javascript" src="xdk/ad/jqm_subpage.js"></script>
+    <script type="application/javascript" src="xdk/appdesigner/js/rest-of-space.js"></script>
+  </head>
+
+  <body>
+    <!-- Main Page -->
+    <div class="upage page-bgnd bgnd-image" id="mainpage" data-role="page">
+      <div class="upage-outer content-area vertical-col left">
+        <div data-role="header" class="container-group inner-element uib_w_6" data-uib="jquery_mobile/header" data-ver="0" data-theme="b">
+          <h1>MyMMA Trainer</h1>
+          <div class="widget-container wrapping-col single-centered"></div>
+          <div class="widget-container content-area horiz-area wrapping-col left"><a class="widget uib_w_7 d-margins menu-button menu-text" data-uib="jquery_mobile/button" data-ver="0" data-role="button" data-icon="bars" data-theme="b">Menu</a>
+          </div>
+          <div class="widget-container content-area horiz-area wrapping-col right"></div>
+        </div>
+        <div id="uib_page_1" class="upage-content vertical-col left ">
+          <div data-role="collapsible" class="no_wrap widget uib_w_17 cllpse-btn" data-uib="jquery_mobile/collapsible" data-ver="0" data-collapsed="false" data-theme="b" data-content-theme="b"><a class="widget uib_w_18 d-margins colps-btn-txt" data-uib="jquery_mobile/button" data-ver="0" data-role="button" data-icon="carat-r" data-iconpos="right">Your Courses</a>
+            <h4>Courses</h4>
+            <div class="col uib_col_1 single-col" data-uib="layout/col" data-ver="0">
+              <div class="widget-container content-area vertical-col"><a class="widget uib_w_19 d-margins colps-btn-txt" data-uib="jquery_mobile/button" data-ver="0" data-role="button" data-icon="carat-r" data-iconpos="right">Course Library</a>
+                <span class="uib_shim"></span>
+              </div>
+            </div>
+
+          </div>
+          <div class="widget uib_w_28 ui-content no_wrap d-margins outset-margin rest-of-height" data-uib="jquery_mobile/listview" data-ver="0">
+            <ul data-role="listview">
+              <li class="widget uib_w_29" data-uib="jquery_mobile/listitem" data-ver="0" data-theme="b">
+                <a href="https://www.youtube.com/results?search_query=mma+training+workouts">
+                  <img src="images/youtubeFlame.jpg"><span>Videos</span>
+                </a>
+              </li>
+              <li class="widget uib_w_30" data-uib="jquery_mobile/listitem" data-ver="0" data-theme="b">
+                <a href="#">
+                  <img src="images/drills.jpg">
+                  <h2>Drills</h2>
+                  <p>no drills</p>
+                </a>
+              </li>
+              <li class="widget uib_w_31" data-uib="jquery_mobile/listitem" data-ver="0" data-theme="b">
+                <a href="#">
+                  <img src="images/pre-workout-snacks.jpg">
+                  <h2>Diet</h2>
+                  <p>no diets</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="inner-element uib_w_1 uib_sidebar leftbar bar-bg thumb-bg bar-gutter swipe" data-uib="layout/left_sidebar" data-ver="1" data-anim="{'style':'overlap', 'v':200, 'side':'left', 'dur':200}" id="sidebar-home">
+
+          <div class="sidebar-content content-area vertical-col">
+
+            <a class="widget uib_w_3 d-margins menu-text" data-uib="jquery_mobile/button" data-ver="0" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">My Courses</a><a class="widget uib_w_4 d-margins menu-text" data-uib="jquery_mobile/button"
+            data-ver="0" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Browse Coures</a>
+            <div class="widget uib_w_22 ui-content no_wrap outset-margin d-margins" data-uib="jquery_mobile/listview" data-ver="0">
+              <ul data-role="listview">
+                <li class="widget uib_w_23" data-uib="jquery_mobile/listitem" data-ver="0" data-theme="b" data-icon="arrow-r"><a href="https://www.youtube.com/results?search_query=mma+training+workouts"><span>Videos</span></a>
+                </li>
+              </ul>
+            </div>
+            <a class="widget uib_w_32 d-margins menu-text" data-uib="jquery_mobile/button" data-ver="0" data-role="button" data-theme="b" data-icon="arrow-r" data-iconpos="right">Drills</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- My Courses Page -->
+    <div class="upage page-bgnd" id="uib_page_2" data-role="page">
+      <div class="upage-outer">
+        <div data-role="header" class="container-group inner-element uib_w_8" data-uib="jquery_mobile/header" data-ver="0" data-theme="b">
+          <h1>My Courses</h1>
+          <div class="widget-container wrapping-col single-centered"></div>
+          <div class="widget-container content-area horiz-area wrapping-col left"><a class="widget uib_w_16 d-margins" data-uib="jquery_mobile/button" data-ver="0" data-role="button" data-icon="arrow-l">Back</a>
+
+          </div>
+          <div class="widget-container content-area horiz-area wrapping-col right"></div>
+        </div>
+        <div class="upage-content ac0 content-area vertical-col left" id="page_77_88">
+
+          <div class="widget uib_w_24 ui-content no_wrap d-margins" data-uib="jquery_mobile/listview" data-ver="0">
+            <ul data-role="listview" data-inset="true" data-filter="true" data-theme="b" data-filter-theme="a">
+              <li class="widget uib_w_25" data-uib="jquery_mobile/listitem" data-ver="0">
+                <img src="images/ninja-1.jpg"><span>Ninjutsu</span>
+              </li>
+              <li class="widget uib_w_26" data-uib="jquery_mobile/listitem" data-ver="0">
+                <img src="images/muay_thai.jpg"><span>Muay Thai</span>
+              </li>
+              <li class="widget uib_w_27" data-uib="jquery_mobile/listitem" data-ver="0">
+                <img src="images/wing-chun.png"><span>Wing Chun</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Course Library Page -->
+    <div class="upage page-bgnd" id="uib_page_3" data-role="page">
+      <div class="upage-outer">
+        <div data-role="header" class="container-group inner-element uib_w_21" data-uib="jquery_mobile/header" data-ver="0" data-theme="b">
+          <h1>Available Courses</h1>
+          <div class="widget-container wrapping-col single-centered"></div>
+          <div class="widget-container content-area horiz-area wrapping-col left">
+            <a class="widget uib_w_16 d-margins" data-uib="jquery_mobile/button" data-ver="0" data-role="button" data-icon="arrow-l">Back</a>
+          </div>
+          <div class="widget-container content-area horiz-area wrapping-col right"></div>
+        </div>
+        <div class="upage-content ac0 content-area vertical-col left" id="page_52_14">
+
+          <div class="sbs-container widget uib_w_33 d-margins sbs" data-uib="layout/side_by_side" data-ver="0">
+            <div class="leftContent widget-container">
+              <div class="table-thing with-label widget uib_w_20 d-margins search-lbl-txt" data-uib="jquery_mobile/input" data-ver="0">
+                <label class="narrow-control label-inline" for="search-input">Search</label>
+                <input class="wide-control" placeholder="keyword" type="search" data-mini="true" id="search-input">
+              </div>
+            </div>
+            <div class="rightContent widget-container">
+              <a class="widget uib_w_34 d-margins" data-uib="jquery_mobile/button" data-ver="0" data-role="button" data-icon="check" data-iconpos="right" data-mini="true" data-theme="b" id="search-button">go</a>
+            </div>
+          </div>
+          <div class="grid grid-pad urow uib_row_1 row-height-1" data-uib="layout/row" data-ver="0">
+            <div class="col uib_col_7 col-0_12-12" data-uib="layout/col" data-ver="0">
+              <div class="widget-container content-area wrapping-col left">
+                <a class="widget uib_w_35 d-margins" data-uib="jquery_mobile/button" data-ver="0" data-role="button" data-mini="true" data-theme="b" id="clear-btn" style="background-color:green">clear</a>
+                <span class="uib_shim"></span>
+              </div>
+            </div>
+            <span class="uib_shim"></span>
+          </div>
+          <div id="results" class="bordered-image">
+              <div id="resultList">This is where results will live eventually...</div>
+          </div>
+          
+
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+</html>
