@@ -6,7 +6,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "jsapp/template-blank-cordova-ad-project/sample.zip",
       "projectGuid": "14aade04-eb49-460b-833e-8127039b2827",
-      "lastModifiedDate": 1452445389389,
+      "lastModifiedDate": 1452566420601,
       "creationDate": 1452392842804
     },
     "XDK-app-designer": "true",
@@ -68,7 +68,27 @@
         "gitref": "",
         "name": "Splashscreen",
         "description": "Cordova Splashscreen Plugin",
-        "checksum": "170efb68"
+        "checksum": "170efb68",
+        "cordovaVersion": ">=3.1.0"
+      },
+      {
+        "id": "cordova-plugin-inappbrowser",
+        "name": "InAppBrowser",
+        "version": "1.1.0",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-inappbrowser",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-inappbrowser",
+        "selectedState": "Included",
+        "checksum": "20096ffc",
+        "dependsOn": [],
+        "topLevel": true,
+        "cordovaVersion": ">=3.1.0",
+        "permissions": {},
+        "description": "Cordova InAppBrowser Plugin",
+        "data": {},
+        "dependedBy": []
       }
     ],
     "buildConfigurations": {
@@ -79,7 +99,8 @@
         "preferences_": {
           "android-minSdkVersion": "14",
           "android-targetSdkVersion": "19",
-          "android-installLocation": "auto"
+          "android-installLocation": "auto",
+          "Fullscreen": false
         },
         "isActive_": true,
         "appName_": "my_test",
@@ -89,7 +110,9 @@
           "network": [
             "*"
           ],
-          "intents": [],
+          "intents": [
+            "*"
+          ],
           "navigation": []
         },
         "icons_": [],

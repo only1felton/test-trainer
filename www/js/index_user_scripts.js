@@ -91,14 +91,20 @@
         if (searchPhrase) {
              resultList.text("Searching GitHub for "+searchPhrase+"...");
              gitHubSearch += encodeURIComponent(searchPhrase);
+            
+            //debugging
+            console.log(gitHubSearch);
+            
             $.get(gitHubSearch)
             .success(function(r){
+                var numItems = r.items.length;
+                //resultList.text("number of returned items: " + numItems);
                 displayResults(r.items, resultList); 
             })
             .fail(function(r){
                 resultList.text("Failed to retrieve search results");
             });
-             
+        
         }
 
        
@@ -119,6 +125,33 @@
         
     });
     
+        /* listitem  Videos */
+    $(document).on("click", "#listItem-videos", function(evt)
+    {
+        /* your code goes here */ 
+        
+        //window.open function now calls cordova.InAppBrowser.open
+        window.open('https://m.youtube.com/#/results?search_query=mma+training+workouts', '_blank', 'location=yes');
+        return false;
+    });
+    
+    
+        /* listitem  #sidebar-listItem-videos */
+    $(document).on("click", "#sidebar-listItem-videos", function(evt)
+    {
+        /* your code goes here */ 
+        //window.open function now calls cordova.InAppBrowser.open
+        window.open('https://www.youtube.com/results?search_query=mma+training+workouts', '_blank', 'location=yes');
+        return false;       
+    });
+    
+        /* button  #test-btn */
+    $(document).on("click", "#test-btn", function(evt)
+    {
+        /* your code goes here */ 
+        window.open('https://api.github.com/search/repositories?q=ninja', '_self', 'location=no');
+    });
+    
     }
  document.addEventListener("app.Ready", register_event_handlers, false);
 })();
@@ -134,12 +167,13 @@ function displayResults(results, resultList){
                             "<div class='title'>" + item.name + "</div>" +
                             "<div>Language: " + item.language + "</div>" +
                             "<div>Owner: " + item.owner.login + "</div>" +
-                             "<div>URL: <a href='" + item.html_url + "'>" + item.html_url + "</a></div>" +
+                            "<div>URL: <a href='" + item.html_url + "'>" + item.html_url + "</a></div>" +
                             "</div>");
 
             //append new result entry to resultList
-            resultList.append(newResult);
+            resultList.append(newResult);       
     });
+    
 
 }
 
