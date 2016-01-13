@@ -6,7 +6,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "jsapp/template-blank-cordova-ad-project/sample.zip",
       "projectGuid": "14aade04-eb49-460b-833e-8127039b2827",
-      "lastModifiedDate": 1452566420601,
+      "lastModifiedDate": 1452647791960,
       "creationDate": 1452392842804
     },
     "XDK-app-designer": "true",
@@ -143,7 +143,9 @@
           "network": [
             "*"
           ],
-          "intents": [],
+          "intents": [
+            "*"
+          ],
           "navigation": []
         },
         "icons_": [],
@@ -152,10 +154,10 @@
         "excludedLibraries_": "",
         "cordovaCLIVersion_": "5.1.1",
         "crosswalkVersion_": "14",
-        "appVersion_": "0.0.1",
-        "appAuthor_": "Intel XDK",
-        "appDescription_": "Template to develop a Cordova mobile web app using the App Designer UI editor.",
-        "appVersionCode_": "1"
+        "appVersion_": "0.0.2",
+        "appAuthor_": "only1felton",
+        "appDescription_": "Test trainer app using App Designer",
+        "appVersionCode_": "2"
       },
       "iOS": {
         "platform_": "ios",
